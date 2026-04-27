@@ -181,12 +181,7 @@ export default function Home() {
               JobPilot <span className="text-blue-400 font-black">AI</span>
             </span>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="bg-slate-800/60 text-emerald-400 px-3 py-1.5 rounded-full text-xs font-bold border border-emerald-500/20 flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
-              Local AI · Ollama
-            </span>
-          </div>
+
         </div>
       </nav>
 
