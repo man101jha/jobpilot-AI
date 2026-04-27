@@ -145,8 +145,8 @@ def _parse_content(raw_text):
         if not found_first_heading:
             continue
 
-        # --- Bold title line  **Company | Role | Date**
-        bold_match = re.match(r'^\*\*(.+?)\*\*(.*)$', line)
+        # --- Bold title line  **Company | Role | Date** (may have leading bullet)
+        bold_match = re.match(r'^(?:[-•›]\s+|\*\s+)?\*\*(.+?)\*\*(.*)$', line)
         if bold_match:
             inner = bold_match.group(1).strip()
             rest  = bold_match.group(2).strip().lstrip('–-|').strip()

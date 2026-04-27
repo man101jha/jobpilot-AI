@@ -174,8 +174,8 @@ export default function Home() {
       <nav className="relative z-10 border-b border-slate-800/50 backdrop-blur-md bg-slate-950/60">
         <div className="max-w-7xl mx-auto px-6 h-18 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl shadow-lg shadow-blue-500/20">
-              <Bot className="w-5 h-5 text-white" />
+            <div className="p-1 bg-slate-900/50 border border-slate-700 rounded-xl shadow-lg shadow-blue-500/10 overflow-hidden">
+              <img src="/logo.png" alt="JobPilot Logo" className="w-8 h-8 object-cover rounded-lg" />
             </div>
             <span className="text-xl font-bold tracking-tight text-white">
               JobPilot <span className="text-blue-400 font-black">AI</span>

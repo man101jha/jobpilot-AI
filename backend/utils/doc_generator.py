@@ -49,7 +49,7 @@ def _parse_content(raw_text):
             blocks.append({"type": "section", "text": line})
             continue
 
-        bold_match = re.match(r'^\*\*(.+?)\*\*(.*)$', line)
+        bold_match = re.match(r'^(?:[-•›]\s+|\*\s+)?\*\*(.+?)\*\*(.*)$', line)
         if bold_match:
             inner = bold_match.group(1).strip()
             rest  = bold_match.group(2).strip().lstrip('–-|').strip()
